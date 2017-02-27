@@ -88,32 +88,59 @@ header .main-menu ul.nav>li> a:hover{
 }
 
 
+/* search field */
+header .main-menu .search input[type=checkbox] {
+    display: none;
+}
+header .main-menu .search input[type=text]{
+    display: none;
+    position: absolute;
+}
+header .main-menu .search label:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+header .main-menu .search label {
+    background: transparent;
+    border: none;
+    height: 42px;
+    width: 42px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+header .main-menu .search input[type=checkbox]:checked+input{
+    display: block;
+}
+
 header .main-menu form.search {
     position: relative;
     width: 100px;
     margin: 0 auto;
     height: 42px;
 }
-header .main-menu .search input {
-    height: 42px;
-    width: 0;
-    padding: 0 42px 0 15px;
-    border: none;
-    border-bottom: 2px solid transparent;
-    outline: none;
-    background: transparent;
-    transition: .4s cubic-bezier(0, 0.8, 0, 1);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-}
-header .main-menu .search input:focus {
-    width: 200px;
-    z-index: 1;
-    border-bottom: 2px solid #F9F0DA;
-}
-header .main-menu .search button {
+/*header .main-menu .search input {*/
+    /*height: 42px;*/
+    /*width: 0;*/
+    /*padding: 0 42px 0 15px;*/
+    /*border: none;*/
+    /*border-bottom: 2px solid transparent;*/
+    /*outline: none;*/
+    /*background: transparent;*/
+    /*transition: .4s cubic-bezier(0, 0.8, 0, 1);*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*z-index: 2;*/
+/*}*/
+/*header .main-menu .search input:focus {*/
+    /*width: 200px;*/
+    /*z-index: 1;*/
+    /*border-bottom: 2px solid #F9F0DA;*/
+/*}*/
+/*header .main-menu .search button {
     background: transparent;
     border: none;
     height: 42px;
@@ -128,7 +155,9 @@ header .main-menu .search button:before {
     font-family: FontAwesome;
     font-size: 16px;
     color: #F9F0DA;
-}
+}*/
+
+
 
 
 /* ------------------ MEDIA QUERIES -------------*/
