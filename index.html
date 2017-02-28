@@ -7,10 +7,16 @@
     <title>Головна сторінка</title>
 
     <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <!-- Fonts-->
     <link rel="stylesheet" href="fonts/roboto_light_macroman/stylesheet.css">
     <link rel="stylesheet" href="fonts/roboto_bold_macroman/stylesheet.css">
+
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+
 </head>
 <body>
 
@@ -60,9 +66,9 @@
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                            <div class="navbar-container collapse navbar-collapse" id="bs-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li class=""><a href="#">
+                                    <li><a href="#">
                                         ГОЛОВНА
                                         <span class="sr-only">(current)</span></a></li>
                                     <li><a href="#">ПРОДУКЦІЯ</a></li>
@@ -70,16 +76,16 @@
                                     <li><a href="#">АКТУАЛЬНО</a></li>
                                     <li><a href="#">КОНТАКТИ</a></li>
                                     <li>
-                                        <form class="search">
-                                            <label for="cb-search"></label>
-                                            <input type="checkbox" id="cb-search"/>
-                                            <input type="text" placeholder="Введіть запит...">
-                                        </form>
+
                                     </li>
 
                                 </ul>
                             </div><!-- /.navbar-collapse -->
-
+                            <form class="search">
+                                <label for="cb-search"></label>
+                                <input type="checkbox" id="cb-search"/>
+                                <input type="text" placeholder="Введіть запит...">
+                            </form>
 
                         </div><!-- /.container-fluid -->
                     </nav>
@@ -92,11 +98,14 @@
 </header>
 <main>
 
-    <div class="slider-container">
-
+    <div class="big-slider-container">
+            <div><img src="images/slide1.jpg" alt="" class="img-responsive">
+            </div>
+            <div>your content</div>
+            <div>your content</div>
     </div>
-    <div class="products-container">
-
+    <div class="products-slider-container">
+        Some slider
     </div>
 
     <div class="news">
@@ -110,5 +119,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<script src="vendor/slick/slick.js"></script>
 </body>
 </html>

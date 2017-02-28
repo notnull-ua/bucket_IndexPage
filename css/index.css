@@ -2,6 +2,7 @@
 header {
     margin-top: 2.5em;
     font-family: "Roboto Light";
+    tab-index: 1;
 }
 
 header .container {
@@ -38,35 +39,43 @@ header .top-menu .contacts a {
     display: block;
     margin: 0 1em;
 }
-header .top-menu .contacts a:hover{
+
+header .top-menu .contacts a:hover {
     color: #0099cc;
     text-decoration: none;
 }
 
 header .top-menu .contacts a > span {
     color: #0099cc;
-    margin-right: 0.5em ;
+    margin-right: 0.5em;
 }
 
-header .top-menu .social{
+header .top-menu .social {
     display: flex;
 }
 
-header .top-menu .social a{
+header .top-menu .social a {
     color: #363634;
     display: block;
     margin: 0 0.5em;
 }
 
 header .main-menu {
+    color: #0399da;
 }
 
-header .main-menu nav{
+header .main-menu .container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+header .main-menu nav {
     background-color: transparent;
     border: none;
     /*height: 80px;*/
     margin: 0;
 }
+
 header .main-menu a {
     padding: 2.036em 1.214em;
 }
@@ -74,168 +83,88 @@ header .main-menu a {
 header .main-menu .container-fluid {
     padding: 0;
 }
-header .main-menu ul.nav{
+
+header .main-menu ul.nav {
     float: right;
 }
-header .main-menu ul.nav>li>a{
+
+header .main-menu ul.nav > li > a {
     color: #0399da;
     font-family: "Roboto";
-    font-weight:bold ;
-}
-header .main-menu ul.nav>li> a:hover{
-    border-bottom: 3px solid #ffed00 ;
-    color: #ffed00;!important;
+    font-weight: bold;
 }
 
+header .main-menu ul.nav > li > a:hover {
+    border-bottom: 3px solid #ffed00;
+    color: #ffed00;
+!important;
+}
+
+header .main-menu .navbar-container {
+    padding-right: 7.143em;
+}
 
 /* search field */
 header .main-menu .search input[type=checkbox] {
     display: none;
 }
-header .main-menu .search input[type=text]{
-    display: none;
+
+header .main-menu .search input[type=text] {
+    /*display: none;*/
     position: absolute;
+    left: -83px;
+    height: 0;
+    /*padding: 10px;*/
+    border: 2px solid #0399da;
+    color: black;
+    opacity: 0;
+    transition:  .4s cubic-bezier(0, 0.8, 0, 1);
 }
-header .main-menu .search label:before{
+
+header .main-menu .search label:before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #F9F0DA;
 }
+
 header .main-menu .search label {
     background: transparent;
     border: none;
-    height: 42px;
-    width: 42px;
+    height: 3em;
     top: 0;
     right: 0;
     cursor: pointer;
+    border-left: 1px solid;
+    width: 5.000em;
+    margin-top: 1.429em;
+    padding: 0.5em 0.714em 0.714em 2em;
 }
-header .main-menu .search input[type=checkbox]:checked+input{
-    display: block;
+
+header .main-menu .search label:hover {
+    color: #ffed00;
+}
+
+header .main-menu .search input[type=checkbox]:checked + input {
+    opacity: 1;
+    height: 2.143em;
+    padding: 0.714em;
 }
 
 header .main-menu form.search {
-    position: relative;
-    width: 100px;
-    margin: 0 auto;
-    height: 42px;
-}
-/*header .main-menu .search input {*/
-    /*height: 42px;*/
-    /*width: 0;*/
-    /*padding: 0 42px 0 15px;*/
-    /*border: none;*/
-    /*border-bottom: 2px solid transparent;*/
-    /*outline: none;*/
-    /*background: transparent;*/
-    /*transition: .4s cubic-bezier(0, 0.8, 0, 1);*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*z-index: 2;*/
-/*}*/
-/*header .main-menu .search input:focus {*/
-    /*width: 200px;*/
-    /*z-index: 1;*/
-    /*border-bottom: 2px solid #F9F0DA;*/
-/*}*/
-/*header .main-menu .search button {
-    background: transparent;
-    border: none;
-    height: 42px;
-    width: 42px;
     position: absolute;
-    top: 0;
+    width: 7.143em;
     right: 0;
-    cursor: pointer;
-}
-header .main-menu .search button:before {
-    content: "\f002";
-    font-family: FontAwesome;
-    font-size: 16px;
-    color: #F9F0DA;
-}*/
-
-
-
-
-/* ------------------ MEDIA QUERIES -------------*/
-
-/* ------------ Mobile phone -----------------*/
-@media (max-width: 767px) {
-
-    header .top-menu {
-        margin-left: 0;
-    }
-    header .top-menu .contacts a{
-        margin: 0;
-    }
-    header .main-menu ul.nav{
-        float: left;
-    }
-
-    .navbar-header button{
-        float: left;
-        left: 2em;
-    }
-
+    padding-left: 2.143em;
 }
 
-/* -----------------Tablets and other ------------------*/
-
-@media (min-width: 767px) {
-    header .top-menu:before {
-        content: "";
-        height: 45px;
-        width: 45px;
-        background: url("../images/header-menu-triangle.png") no-repeat;
-        position: absolute;
-        left: -0.453em;
-        top: 0;
-    }
-
-    header .top-menu {
-        margin-left: 2.14em;
-        padding-left: 1em;
-    }
-
-
+/* --------- MAIN -------------*/
+main .big-slider-container {
+position: absolute;
+    width: 100%;
+    top:0;
+    z-index: -1;
+}
+main .big-slider-container img {
+    width: 100%;
 }
 
-@media (max-width: 970px) {
-    .navbar-header {
-        float: none;
-    }
-
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding: 1em 3em;
-    }
-    .collapse.in{
-        display:block !important;
-    }
-}
