@@ -4,6 +4,6 @@
 $().ready(function () {
     $('.big-slider-container').slick({
         'prevArrow':'<button type="button" class="slick-prev">Previous</button>',
-        'nextArrow':'<button type="button" class="glyphicon glyphicon-arrow-right slick-next ">Next</button>'
+        'nextArrow':'<button type="button" class="fa fa-arrow-left slick-next">Next</button>'
     });
 });

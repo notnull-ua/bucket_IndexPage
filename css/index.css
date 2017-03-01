@@ -2,7 +2,8 @@
 header {
     margin-top: 2.5em;
     font-family: "Roboto Light";
-    tab-index: 1;
+    position: relative;
+    z-index: 100;
 }
 
 header .container {
@@ -158,13 +159,44 @@ header .main-menu form.search {
 }
 
 /* --------- MAIN -------------*/
+main {
+    z-index:10;
+}
 main .big-slider-container {
 position: absolute;
     width: 100%;
     top:0;
-    z-index: -1;
+    z-index: 10;
 }
 main .big-slider-container img {
     width: 100%;
 }
+main .big-slider-container .slick-next, main .big-slider-container .slick-prev{
+    width: 40px;
+    height: 112px;
+    background: #a3a3a3;
+    color: white;
+    opacity: .4;
+}
+main .big-slider-container .slick-next:hover, main .big-slider-container .slick-prev:hover{
+    opacity: .8;
+}
+main .big-slider-container .slick-next:before, main .big-slider-container .slick-prev:before{
+    background: #a3a3a3;
+    color: white;
+    font-family: Roboto;
+}
+main .big-slider-container .slick-next{
+    right:0;
+}
+main .big-slider-container .slick-prev {
+    left: 0;
+    z-index: 10;
+}
+
+main .main-container {
+    margin-top: 35%;
+    z-index: 1;
+}
+
 
