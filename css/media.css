@@ -47,6 +47,9 @@
 /* ---------------- Tablets and less------------------*/
 
 @media (max-width: 970px) {
+    header {
+        margin-top: 0;
+    }
     .navbar-header {
         float: none;
     }
@@ -100,4 +103,11 @@
     header .top-menu .contacts {
         font-size: 1em;
     }
+    main .big-slider-container {
+        position: relative;
+    }
+
+
+
+
 }

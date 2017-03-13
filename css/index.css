@@ -194,9 +194,35 @@ main .big-slider-container .slick-prev {
     z-index: 10;
 }
 
-main .main-container {
+main .products-wrapper {
     margin-top: 35%;
-    z-index: 1;
+    position: relative;
+    z-index: 10;
+}
+main .big-slider-container .slick-dots{
+    bottom:1.429em;
+}
+
+main .big-slider-container .slick-dots li.slick-active button:before{
+    color: #ffb700;
+    font-size: 12px;
+}
+
+/* ---------- PRODUCT BLOCK----------*/
+main .products-wrapper .title {
+    text-align: center;
+    font-size: 2.571em;
+    font-family: "Roboto Light";
+
+}
+main .products-slider-container .item img{
+    border: 1px solid #cccccc;
+}
+
+
+main .products-slider-container .slick-arrow:before{
+    color: black;
+
 }
 
 
