@@ -3,6 +3,9 @@
 /* ------------ Mobile phone -----------------*/
 @media (max-width: 767px) {
 
+    header {
+        position: relative;
+    }
     header .top-menu {
         margin-left: 0;
         height: auto;
