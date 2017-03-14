@@ -1,0 +1,203 @@
+.blue {
+    color: #0099cc;
+}
+.blue-background {
+    background-color: #0099cc;
+}
+.yellow {
+    color: #ffed00;
+}
+.yellow-background {
+    background-color: #ffed00;
+}
+hr.delimiter{
+    width: 77px;
+    border: 2px solid #ffff00;
+}
+
+
+body {
+    min-height: 600px;
+}
+
+/* ------------------------ HEADER-------------------*/
+header {
+    margin-top: 2.5em;
+    font-family: "Roboto Light";
+    position: relative;
+    z-index: 100;
+}
+
+header .container {
+    background: #333333;
+}
+
+header .logo {
+    padding: 1.75em 0;
+    display: flex;
+    justify-content: center;
+}
+
+header .menu-container {
+    padding: 0;
+}
+
+header .top-menu {
+    height: 45px;
+    background-image: url("../images/header-menu-texture.jpg");
+    padding: 0.71em 1.57em;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header .top-menu .contacts {
+    display: flex;
+    font-size: 1.14em;
+}
+
+header .top-menu .contacts a {
+    font-family: "Roboto Light";
+    color: black;
+    display: block;
+    margin: 0 1em;
+}
+
+header .top-menu .contacts a:hover {
+    color: #0099cc;
+    text-decoration: none;
+}
+
+header .top-menu .contacts a > span {
+    color: #0099cc;
+    margin-right: 0.5em;
+}
+
+
+
+header .main-menu {
+    color: #0399da;
+}
+
+header .main-menu .container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+header .main-menu nav {
+    background-color: transparent;
+    border: none;
+    /*height: 80px;*/
+    margin: 0;
+}
+
+header .main-menu a {
+    padding: 2.036em 1.214em;
+}
+
+header .main-menu .container-fluid {
+    padding: 0;
+}
+
+header .main-menu ul.nav {
+    float: right;
+}
+
+header .main-menu ul.nav > li > a {
+    color: #0399da;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+header .main-menu ul.nav > li > a:hover {
+    border-bottom: 3px solid #ffed00;
+    color: #ffed00;
+!important;
+}
+
+header .main-menu .navbar-container {
+    /*padding-right: 7.143em;*/
+    padding-right: 5.9em;
+}
+
+/* search field */
+header .main-menu .search input[type=checkbox] {
+    display: none;
+}
+
+header .main-menu .search input[type=text] {
+    /*display: none;*/
+    position: absolute;
+    left: -83px;
+    height: 0;
+    /*padding: 10px;*/
+    border: 2px solid #0399da;
+    color: black;
+    opacity: 0;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+}
+
+header .main-menu .search label:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+}
+
+header .main-menu .search label {
+    background: transparent;
+    border: none;
+    height: 3em;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-left: 1px solid;
+    width: 5.000em;
+    margin-top: 1.429em;
+    padding: 0.5em 0.714em 0.714em 2em;
+}
+
+header .main-menu .search label:hover {
+    color: #ffed00;
+}
+
+header .main-menu .search input[type=checkbox]:checked + input {
+    opacity: 1;
+    height: 2.143em;
+    padding: 0.714em;
+}
+
+header .main-menu form.search {
+    position: absolute;
+    width: 7.143em;
+    right: 0;
+    padding-left: 2.143em;
+}
+
+header .social-block a:hover{
+    color: #ffff00;
+}
+
+.social-block {
+    display: flex;
+}
+
+ .social-block a {
+    color: #363634;
+    display: block;
+    margin: 0 0.5em;
+}
+
+/* ---------------------- footer ---------------*/
+footer {
+    border-top: 3px solid #ffff00;
+    min-height: 77px;
+    background: #585858;
+    color: white;
+    padding: 2em;
+}
+footer .social-block a{
+    color: #ffff00;
+}
+footer .social-block a:hover{
+    color: black;
+}
