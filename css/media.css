@@ -30,6 +30,9 @@
 /* -----------------Tablets and larger ------------------*/
 
 @media (min-width: 767px) {
+    header {
+        height: 10em;
+    }
     header .top-menu:before {
         content: "";
         height: 45px;
